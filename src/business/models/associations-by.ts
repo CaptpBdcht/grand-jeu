@@ -1,5 +1,5 @@
-export const Associations = {
-  By2: {
+export const AssociationsBy = {
+  '2': {
     Seven: {
       Up: 'Nouvelles',
       Down: 'Femme de mauvaise vie'
@@ -17,7 +17,7 @@ export const Associations = {
       Down: 'Projet'
     }
   },
-  By3: {
+  '3': {
     Seven: {
       Up: 'Contrariété',
       Down: 'Allégresse'
@@ -31,7 +31,7 @@ export const Associations = {
       Down: 'Déception'
     }
   },
-  By4: {
+  '4': {
     Seven: {
       Up: 'Intrigues ténébreuses',
       Down: 'Bataille'
