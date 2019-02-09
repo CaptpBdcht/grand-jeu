@@ -5,7 +5,7 @@ import { OrientedAssociations } from './data/oriented-associations';
 import * as Cards from './items/cards-collection';
 import { By3Associations } from './data/three-associations';
 
-describe('Associations', () => {
+describe('Associations should', () => {
   let game: GrandJeu;
 
   beforeEach(() => {
@@ -44,15 +44,15 @@ describe('Associations', () => {
     game.addCard(Cards.aceOfSpades);
 
     expect(Associations.of(game)).toEqual([
-      OrientedAssociations['4']['Seven']['Up'],
-      OrientedAssociations['4']['Eight']['Down'],
-      OrientedAssociations['3']['Nine']['Up'],
+      OrientedAssociations['4']['7']['H'],
+      OrientedAssociations['4']['8']['B'],
+      OrientedAssociations['3']['9']['H'],
       By3Associations['9P/9T/9C'],
-      OrientedAssociations['3']['Ten']['Down'],
+      OrientedAssociations['3']['10']['B'],
       By3Associations['10P/10T/10C'],
-      OrientedAssociations['2']['Jack']['Up'],
-      OrientedAssociations['2']['Queen']['Down'],
-      OrientedAssociations['2']['King']['Up']
+      OrientedAssociations['2']['V']['H'],
+      OrientedAssociations['2']['D']['B'],
+      OrientedAssociations['2']['R']['H']
     ]);
   });
 });

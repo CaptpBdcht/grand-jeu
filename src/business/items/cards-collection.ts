@@ -3,6 +3,8 @@ import { Kinds } from '../entities/kinds';
 import { Orientations } from '../entities/orientations';
 import { Values } from '../entities/values';
 
+// Cards
+
 export const sevenOfSpades = new Card(Values.Seven, Kinds.Spades, Orientations.Up);
 export const eightOfSpades = new Card(Values.Eight, Kinds.Spades, Orientations.Up);
 export const eightOfSpadesDown = new Card(Values.Eight, Kinds.Spades, Orientations.Down);
@@ -30,3 +32,29 @@ export const aceOfHearts = new Card(Values.Ace, Kinds.Hearts, Orientations.Up);
 
 export const sevenOfDiamonds = new Card(Values.Seven, Kinds.Diamonds, Orientations.Up);
 export const eightOfDiamondsDown = new Card(Values.Eight, Kinds.Diamonds, Orientations.Down);
+
+// Collections
+
+export const SimplerGame = [
+  sevenOfSpades,
+  eightOfSpades,
+  eightOfSpadesDown,
+  nineOfSpades,
+  tenOfSpadesDown,
+  jackOfSpades,
+  queenOfSpadesDown,
+  kingOfSpades,
+  aceOfSpades,
+  sevenOfClubs,
+  eightOfClubsDown,
+  nineOfClubs,
+  tenOfClubsDown,
+  jackOfClubs,
+  queenOfClubsDown,
+  kingOfClubs,
+  sevenOfHearts,
+  eightOfHeartsDown,
+  nineOfHearts,
+  tenOfHeartsDown,
+  sevenOfDiamonds
+];

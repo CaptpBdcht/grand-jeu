@@ -4,8 +4,18 @@ import { GameAlreadyFullException } from './exceptions/game-already-full';
 import { InvalidRemoveIndexException } from './exceptions/unused-index-remove';
 
 export class GrandJeu {
-  private readonly FullGameSize = 21;
   private cards: Card[] = [];
+  private consultantPosition: number;
+
+  public static readonly FullGameSize = 21;
+
+  setConsultantPosition(index: number): void {
+    this.consultantPosition = index;
+  }
+
+  getConsultantPosition(): number {
+    return this.consultantPosition;
+  }
 
   getSize() {
     return this.cards.length;
@@ -16,7 +26,7 @@ export class GrandJeu {
   }
 
   addCard(card: Card) {
-    if (this.getSize() === this.FullGameSize) {
+    if (this.getSize() === GrandJeu.FullGameSize) {
       throw new GameAlreadyFullException();
     }
     this.cards.push(card);
