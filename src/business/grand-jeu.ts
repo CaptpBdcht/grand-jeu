@@ -1,4 +1,4 @@
-import { Card } from './models/card';
+import { Card } from './entities/card';
 
 import { GameAlreadyFullException } from './exceptions/game-already-full';
 import { InvalidRemoveIndexException } from './exceptions/unused-index-remove';

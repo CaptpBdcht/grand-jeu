@@ -1,6 +1,6 @@
 import { GrandJeu } from './grand-jeu';
 
-import * as Cards from './models/cards-collection';
+import * as Cards from './items/cards-collection';
 
 import { GameAlreadyFullException } from './exceptions/game-already-full';
 import { InvalidRemoveIndexException } from './exceptions/unused-index-remove';

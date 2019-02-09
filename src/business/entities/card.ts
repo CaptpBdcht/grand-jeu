@@ -1,12 +1,12 @@
-import { Directions } from './directions';
-import { Kinds } from './kinds';
 import { Values } from './values';
+import { Kinds } from './kinds';
+import { Orientations } from './orientations';
 
 export class Card {
   constructor(
     private value: Values,
     private kind: Kinds,
-    private direction: Directions
+    private orientation: Orientations
   ) {
   }
 
@@ -14,7 +14,7 @@ export class Card {
     return this.value;
   }
 
-  getDirection(): Directions {
-    return this.direction;
+  getOrientation(): Orientations {
+    return this.orientation;
   }
 }

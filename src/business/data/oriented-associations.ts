@@ -1,4 +1,4 @@
-export const AssociationsBy = {
+export const OrientedAssociations = {
   '2': {
     Seven: {
       Up: 'Nouvelles',

@@ -1,8 +1,8 @@
 import { Associations } from './associations';
 import { GrandJeu } from './grand-jeu';
 
-import { AssociationsBy } from './models/associations-by';
-import * as Cards from './models/cards-collection';
+import { OrientedAssociations } from './data/oriented-associations';
+import * as Cards from './items/cards-collection';
 
 describe('Associations should', () => {
   let game: GrandJeu;
@@ -14,14 +14,14 @@ describe('Associations should', () => {
   it('return an array with a 2-association when there is one', () => {
     game.addCard(Cards.sevenOfSpades);
     game.addCard(Cards.sevenOfClubs);
-    expect(Associations.of(game)).toEqual([ AssociationsBy['2']['Seven']['Up'] ]);
+    expect(Associations.of(game)).toEqual([ OrientedAssociations['2']['Seven']['Up'] ]);
   });
 
   it('return an array with a 3-association when there is one', () => {
     game.addCard(Cards.sevenOfSpades);
     game.addCard(Cards.sevenOfClubs);
     game.addCard(Cards.sevenOfHearts);
-    expect(Associations.of(game)).toEqual([ AssociationsBy['3']['Seven']['Up'] ]);
+    expect(Associations.of(game)).toEqual([ OrientedAssociations['3']['Seven']['Up'] ]);
   });
 
   it('return an array with a 4-association when there is one', () => {
@@ -29,7 +29,7 @@ describe('Associations should', () => {
     game.addCard(Cards.sevenOfClubs);
     game.addCard(Cards.sevenOfHearts);
     game.addCard(Cards.sevenOfDiamonds);
-    expect(Associations.of(game)).toEqual([ AssociationsBy['4']['Seven']['Up'] ]);
+    expect(Associations.of(game)).toEqual([ OrientedAssociations['4']['Seven']['Up'] ]);
   });
 
   it('find all associations in a given game', () => {
@@ -64,13 +64,13 @@ describe('Associations should', () => {
     game.addCard(Cards.aceOfSpades);
 
     expect(Associations.of(game)).toEqual([
-      AssociationsBy['4']['Seven']['Up'],
-      AssociationsBy['4']['Eight']['Down'],
-      AssociationsBy['3']['Nine']['Up'],
-      AssociationsBy['3']['Ten']['Down'],
-      AssociationsBy['2']['Jack']['Up'],
-      AssociationsBy['2']['Queen']['Down'],
-      AssociationsBy['2']['King']['Up']
+      OrientedAssociations['4']['Seven']['Up'],
+      OrientedAssociations['4']['Eight']['Down'],
+      OrientedAssociations['3']['Nine']['Up'],
+      OrientedAssociations['3']['Ten']['Down'],
+      OrientedAssociations['2']['Jack']['Up'],
+      OrientedAssociations['2']['Queen']['Down'],
+      OrientedAssociations['2']['King']['Up']
     ]);
   });
 });
