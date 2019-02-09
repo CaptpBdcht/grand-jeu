@@ -10,6 +10,12 @@ export class Card {
   ) {
   }
 
+  equals(other: Card): boolean {
+    return this.value === other.value
+      && this.kind === other.kind
+      && this.orientation === other.orientation;
+  }
+
   getValue(): Values {
     return this.value;
   }
@@ -23,6 +29,6 @@ export class Card {
   }
 
   orientedToString(): string {
-    return `${this.value}${this.kind}${this.orientation}`
+    return `${this.value}${this.kind}${this.orientation}`;
   }
 }
