@@ -1,6 +1,38 @@
 export const Equivalences = {
+  // Trèfle
   '7TH': 'Petite somme, enfant brun', '7TB': 'Bâtard, embarras',
   '8TH': 'JF brune', '8TB': 'Jalousie',
-  //
-  '7CaH': 'Bonne nouvelle', '7CaB': 'Dispute'
+  '9TH': 'Argent', '9TB': 'Cadeau',
+  '10TH': 'Gain', '10TB': 'Amour d\'un homme riche',
+  'VTH': 'JH brun', 'VTB': 'Pensée d\'un homme brun',
+  'DTH': 'Femme brune', 'DTB': 'Femme volage',
+  'RTH': 'Homme brun et bon', 'RTB': 'Homme malade',
+  'ATH': 'Richesse', 'ATB': 'Grand triomphe amour, argent',
+  // Coeur
+  '7CH': 'Pensée du consultant', '7CB': 'Désir, colis',
+  '8CH': 'JF blonde', '8CB': 'Joie',
+  '9CH': 'Cadeau, succès', '9CB': 'Retard',
+  '10CH': 'Travail', '10CB': 'Surprise',
+  'VCH': 'JH blond', 'VCB': 'Pensée d\'un homme blond',
+  'DCH': 'Femme blonde', 'DCB': 'Obstacle',
+  'RCH': 'Homme blond', 'RCB': 'Un homme en colère',
+  'ACH': 'Grande joie', 'ACB': 'Maison',
+  // Carreau
+  '7CaH': 'Bonne nouvelle', '7CaB': 'Dispute',
+  '8CaH': 'Démarches, petit voyage', '8CaB': 'Ennuis affaire, amour',
+  '9CaH': 'Sécurité', '9CaB': 'Séparation',
+  '10CaH': 'Grand voyage', '10CaB': 'Changement',
+  'VCaH': 'Facteur', 'VCaB': 'Domestique',
+  'DCaH': 'Blonde méchante', 'DCaB': 'Campagnarde, étrangère',
+  'RCaH': 'Militaire ou voyageur', 'RCaB': 'Etranger ou campagnard',
+  'ACaH': 'Lettre', 'ACaB': 'Lettre',
+  // Pique
+  '7PH': 'Certitude, fillette brune', '7PB': 'Inquiètude',
+  '8PH': 'Maladie', '8PB': 'Religieuse',
+  '9PH': 'Mort', '9PB': 'Prêtre',
+  '10PH': 'Jalousie, ennuis', '10PB': 'Perte d\'argent',
+  'VPH': 'JH brun', 'VPB': 'Espion, traître',
+  'DPH': 'Veuve', 'DPB': 'Femme méchante',
+  'RPH': 'Homme de loi', 'RPB': 'Veuf ou méchant',
+  'APH': 'Procès', 'APB': 'Grossesse',
 };

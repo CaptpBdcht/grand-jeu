@@ -1,6 +1,6 @@
-import { Values } from './values';
 import { Kinds } from './kinds';
 import { Orientations } from './orientations';
+import { Values } from './values';
 
 export class Card {
   constructor(

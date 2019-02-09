@@ -1,10 +1,188 @@
 export const TwoAssociations = {
-  'AT': {
-    // ...
-    'AP': 'Vous signerez un contrat ou conclurez un accord satisfaisant'
-  },
-  // ...
+  // Pique
   'AP': {
-    'AT': 'Réussite en affaires'
-  }
+    // Pique
+    'RP': 'Rencontre avec un homme d’autorité qui agira en votre faveur ',
+    'DP': 'Vous conclurez une affaire avec une femme célibataire',
+    'VP': 'Méfiez vous des propositions malhonnêtes, gare aux tricheurs ',
+    '10P': 'Ne vous compromettez pas dans des affaires délicates. Réfléchissez avant d’agir !',
+    '9P': 'Un héritage, une somme d’argent inattendue',
+    '8P': 'Obstacle dans la réalisation d’un projet',
+    '7P': 'Signature d’un contrat qui vous tient à cœur',
+    // Coeur
+    'AC': 'Succès assurées',
+    'RC': 'Contrat avec un homme de grande influence',
+    'DC': 'Contrat avec une femme de grande influence',
+    'VC': 'Contrat avec un jeune homme',
+    '10C': 'Invitation alléchante',
+    '9C': 'Démarches amoureuses',
+    '8C': 'Couple en vue',
+    '7C': 'Bonne entente amoureuse ',
+    // Carreau
+    'ACa': 'Courrier apportant une offre avantageuse',
+    'RCa': 'Proposition inattendue ',
+    'DCa': 'Affaire avec une femme dont les intentions ne sont pas claires',
+    'VCa': 'Proposition par courrier',
+    '10Ca': 'Changement à l’horizon',
+    '9Ca': 'Echanges retardés',
+    '8Ca': 'Affaires longues à régler',
+    '7Ca': 'Affaire qui vous contrarie ',
+    // Trèfle
+    'AT': 'Réussite en affaires ',
+    'RT': 'Proposition d’un homme sensible à votre charm',
+    'DT': 'Proposition d’une femme sensible à votre charme',
+    'VT': 'Proposition d’un jeune homme dont il faut se méfier',
+    '10T': 'Rentrée d’argent par suite d’un contrat',
+    '9T': 'Associations professionnelles ',
+    '8T': 'Signature proche d’un contrat',
+    '7T': 'Un homme vous fait les beaux yeux'
+  },
+  'RP': {
+    // Pique
+    'AP': 'Accords officiels avec un homme de loi',
+    'DP': 'Accords avec une femme de grande notoriété',
+    'VP': 'Escroquerie, fraude dans votre entourage. Soyez vigilant !',
+    '10P': 'Un homme de loi néglige vos affaires ',
+    '9P': 'Relation avec la justice ',
+    '8P': 'Affaires juridiques en vue',
+    '7P': 'Aide d’un homme de loi',
+    // Coeur
+    'AC': 'Rencontre avec un homme de loi ',
+    'RC': 'Médecin ',
+    'DC': 'Procès lié à une femme',
+    'VC': 'Etudes, examens en vue',
+    '10C': 'Démarches qui aboutissent ',
+    '9C': 'Des nouvelles annoncent le divorce d’amis proches',
+    '8C': 'Amélioration dans vos affaires juridiques ',
+    '7C': 'Tenez compte des conseils de vos amis ',
+    // Carreau
+    'ACa': 'Lettre venant d’un homme de loi ',
+    'RCa': 'Lettre officielle de l’étranger ',
+    'DCa': 'Obstacles créés par une femme ',
+    'VCa': 'Relation avec un homme qui fait de la politique',
+    '10Ca': 'Voyage pour régler des affaires',
+    '9Ca': 'Attente de réponse officielle',
+    '8Ca': 'Démarches officielles',
+    '7Ca': 'Déboires avec un homme ayant le bras long',
+    // Trèfle
+    'AT': 'Arrangements dans vos litiges',
+    'RT': 'Rivalité politique avec un homme ',
+    'DT': 'Femme ayant des difficultés avec la loi',
+    'VT': 'Vous allez faire la connaissance d’un homme très ambitieux',
+    '10T': 'Relation avec un financier au sujet de vos biens ',
+    '9T': 'Vous désirez emprunter de l’argent afin de réaliser vos projets ',
+    '8T': 'Soutien dans les difficultés',
+    '7T': 'Petit gain d’argent '
+  },
+  'DP': {
+    // Pique
+    'AP': 'Accord, contrat grâce à une femme',
+    'RP': 'Accord avec une personne influente sur le plan des affaires',
+    'VP': 'Une femme vous trompe',
+    '10P': 'Rencontre mystérieuse avec une femme seule ',
+    '9P': 'Séparation, divorce avec une femme ',
+    '8P': 'Femme célibataire ayant des problèmes de santé',
+    '7P': 'Aide d’une femme seule ou divorcée ',
+    // Coeur
+    'AC': 'Vous aurez la visite d’une femme célibataire ',
+    'RC': 'Démarches amoureuses auprès d’une femme célibataire',
+    'DC': 'Parente avec laquelle vous conclurez une affair',
+    'VC': 'Relation entre une femme et un jeune homme',
+    '10C': 'Visite d’une parente que vous n’avez pas vue depuislongtemps',
+    '9C': 'Une parente vous porte une grande affection ',
+    '8C': 'Réussite dans la réalisation d’un projet solitaire ',
+    '7C': 'Une femme âgée pense à vous ',
+    // Carreau
+    'ACa': 'Courrier d’une femme seule',
+    'RCa': 'Rupture momentanée avec une femme',
+    'DCa': 'Commérages et bavardages',
+    'VCa': 'Rencontre d’une femme célibataire',
+    '10Ca': 'Femme seule qui voyage ',
+    '9Ca': 'Rendez-vous manqué, empêchement ',
+    '8Ca': 'Vous viendrez en aide à une femme seule ',
+    '7Ca': 'Colère causée par une femme célibataire ',
+    // Trèfle
+    'AT': 'Vos amis parlent derrière votre dos, mais vous réussirez ! ',
+    'RT': 'Un homme rencontre une femme plus âgée',
+    'DT': 'Une femme se rapproche d’une femme plus âgée ',
+    'VT': 'Soutien moral d’une femme plus âgée ',
+    '10T': 'Soutien financier d’une femme plus âgée',
+    '9T': 'Travail avec une femme seule',
+    '8T': 'Cadeau d’une femme seule',
+    '7T': 'Une femme seule pense à vous '
+  },
+  'VP': '',
+  '10P': '',
+  '9P': '',
+  '8P': '',
+  '7P': '',
+  // Coeur
+  'AC': '',
+  'RC': '',
+  'DC': '',
+  'VC': '',
+  '10C': '',
+  '9C': '',
+  '8C': '',
+  '7C': '',
+  // Carreau
+  'ACa': '',
+  'RCa': '',
+  'DCa': '',
+  'VCa': '',
+  '10Ca': '',
+  '9Ca': '',
+  '8Ca': '',
+  '7Ca': '',
+  // Trèfle
+  'AT': '',
+  'RT': '',
+  'DT': '',
+  'VT': '',
+  '10T': '',
+  '9T': '',
+  '8T': '',
+  '7T': ''
 };
+
+/*
+
+  // Pique
+  'AP': '',
+  'RP': '',
+  'DP': '',
+  'VP': '',
+  '10P': '',
+  '9P': '',
+  '8P': '',
+  '7P': '',
+  // Coeur
+  'AC': '',
+  'RC': '',
+  'DC': '',
+  'VC': '',
+  '10C': '',
+  '9C': '',
+  '8C': '',
+  '7C': '',
+  // Carreau
+  'ACa': '',
+  'RCa': '',
+  'DCa': '',
+  'VCa': '',
+  '10Ca': '',
+  '9Ca': '',
+  '8Ca': '',
+  '7Ca': '',
+  // Trèfle
+  'AT': '',
+  'RT': '',
+  'DT': '',
+  'VT': '',
+  '10T': '',
+  '9T': '',
+  '8T': '',
+  '7T': ''
+
+* */
+

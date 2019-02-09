@@ -6,5 +6,5 @@ export enum Values {
   Jack = 'V',
   Queen = 'D',
   King = 'R',
-  Ace = 'As'
+  Ace = 'A'
 }
