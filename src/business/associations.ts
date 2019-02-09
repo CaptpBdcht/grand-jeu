@@ -1,10 +1,11 @@
 import { GrandJeu } from './grand-jeu';
 
+import { Card } from './entities/card';
 import { Orientations } from './entities/orientations';
 import { Values } from './entities/values';
 
 import { OrientedAssociationGateway } from './gateways/oriented-association-gateway';
-import { Card } from './entities/card';
+import { ThreeAssociationsGateway } from './gateways/three-associations-gateway';
 
 export class Associations {
 
@@ -21,6 +22,7 @@ export class Associations {
       for (const orientation of orientations) {
         const foundCards = cards.filter(c => c.getValue() === Values[ value ] && c.getOrientation() === Orientations[ orientation ]);
         maybeAddOrientedAssociation(foundCards, value, orientation);
+        maybeAddThreeAssociation(foundCards);
       }
     }
     return foundAssociations;
@@ -30,6 +32,13 @@ export class Associations {
         foundAssociations.push(
           OrientedAssociationGateway.get(foundCards.length, value, orientation)
         );
+      }
+    }
+
+    function maybeAddThreeAssociation(foundCards: Card[]) {
+      if (foundCards.length === 3) {
+        const [ first, second, third ] = [ ...foundCards ];
+        foundAssociations.push(ThreeAssociationsGateway.get(first, second, third))
       }
     }
   }

@@ -3,33 +3,13 @@ import { GrandJeu } from './grand-jeu';
 
 import { OrientedAssociations } from './data/oriented-associations';
 import * as Cards from './items/cards-collection';
+import { By3Associations } from './data/three-associations';
 
-describe('Associations should', () => {
+describe('Associations', () => {
   let game: GrandJeu;
 
   beforeEach(() => {
     game = new GrandJeu();
-  });
-
-  it('return an array with a 2-association when there is one', () => {
-    game.addCard(Cards.sevenOfSpades);
-    game.addCard(Cards.sevenOfClubs);
-    expect(Associations.of(game)).toEqual([ OrientedAssociations['2']['Seven']['Up'] ]);
-  });
-
-  it('return an array with a 3-association when there is one', () => {
-    game.addCard(Cards.sevenOfSpades);
-    game.addCard(Cards.sevenOfClubs);
-    game.addCard(Cards.sevenOfHearts);
-    expect(Associations.of(game)).toEqual([ OrientedAssociations['3']['Seven']['Up'] ]);
-  });
-
-  it('return an array with a 4-association when there is one', () => {
-    game.addCard(Cards.sevenOfSpades);
-    game.addCard(Cards.sevenOfClubs);
-    game.addCard(Cards.sevenOfHearts);
-    game.addCard(Cards.sevenOfDiamonds);
-    expect(Associations.of(game)).toEqual([ OrientedAssociations['4']['Seven']['Up'] ]);
   });
 
   it('find all associations in a given game', () => {
@@ -67,7 +47,9 @@ describe('Associations should', () => {
       OrientedAssociations['4']['Seven']['Up'],
       OrientedAssociations['4']['Eight']['Down'],
       OrientedAssociations['3']['Nine']['Up'],
+      By3Associations['9P/9T/9C'],
       OrientedAssociations['3']['Ten']['Down'],
+      By3Associations['10P/10T/10C'],
       OrientedAssociations['2']['Jack']['Up'],
       OrientedAssociations['2']['Queen']['Down'],
       OrientedAssociations['2']['King']['Up']

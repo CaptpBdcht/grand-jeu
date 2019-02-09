@@ -1,6 +1,6 @@
 import { Card } from '../entities/card';
-import { Orientations } from '../entities/orientations';
 import { Kinds } from '../entities/kinds';
+import { Orientations } from '../entities/orientations';
 import { Values } from '../entities/values';
 
 export const sevenOfSpades = new Card(Values.Seven, Kinds.Spades, Orientations.Up);
@@ -20,11 +20,13 @@ export const tenOfClubsDown = new Card(Values.Ten, Kinds.Clubs, Orientations.Dow
 export const jackOfClubs = new Card(Values.Jack, Kinds.Clubs, Orientations.Up);
 export const queenOfClubsDown = new Card(Values.Queen, Kinds.Clubs, Orientations.Down);
 export const kingOfClubs = new Card(Values.King, Kinds.Clubs, Orientations.Up);
+export const aceOfClubs = new Card(Values.Ace, Kinds.Clubs, Orientations.Up);
 
 export const sevenOfHearts = new Card(Values.Seven, Kinds.Hearts, Orientations.Up);
 export const eightOfHeartsDown = new Card(Values.Eight, Kinds.Hearts, Orientations.Down);
 export const nineOfHearts = new Card(Values.Nine, Kinds.Hearts, Orientations.Up);
 export const tenOfHeartsDown = new Card(Values.Ten, Kinds.Hearts, Orientations.Down);
+export const aceOfHearts = new Card(Values.Ace, Kinds.Hearts, Orientations.Up);
 
 export const sevenOfDiamonds = new Card(Values.Seven, Kinds.Diamonds, Orientations.Up);
 export const eightOfDiamondsDown = new Card(Values.Eight, Kinds.Diamonds, Orientations.Down);

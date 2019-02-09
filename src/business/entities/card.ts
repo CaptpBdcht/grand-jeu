@@ -17,4 +17,12 @@ export class Card {
   getOrientation(): Orientations {
     return this.orientation;
   }
+
+  collectionToString(): string {
+    return `${this.value}${this.kind}`;
+  }
+
+  orientedToString(): string {
+    return `${this.value}${this.kind}${this.orientation}`
+  }
 }

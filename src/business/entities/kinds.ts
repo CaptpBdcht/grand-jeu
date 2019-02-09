@@ -1,6 +1,6 @@
 export enum Kinds {
-  Clubs,
-  Diamonds,
-  Hearts,
-  Spades
+  Clubs = 'T',
+  Diamonds = 'Ca',
+  Hearts = 'C',
+  Spades = 'P'
 }
