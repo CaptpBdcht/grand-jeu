@@ -1,4 +1,5 @@
 export const OrientedAssociations = {
+  // Par deux
   '2': {
     '7': { H: 'Nouvelles', B: 'Femme de mauvaise vie' },
     '8': { H: 'Relation nouvelle', B: 'Obstacles ' },
@@ -9,6 +10,7 @@ export const OrientedAssociations = {
     'R': { H: 'Consultation', B: 'Projet' },
     'A': { H: 'Trahison ', B: 'Complot d’ennemis ' }
   },
+  // Par trois
   '3': {
     '7': { H: 'Contrariété', B: 'Allégresse' },
     '8': { H: 'Union mal assortie ', B: 'Théâtre ' },
@@ -19,6 +21,7 @@ export const OrientedAssociations = {
     'R': { H: 'Grand conseil ', B: 'Réussite commerciale ' },
     'A': { H: 'Bon profit ', B: 'Vie déréglée ' }
   },
+  // Par quatre
   '4': {
     '7': { H: 'Intrigues ténébreuses', B: 'Bataille' },
     '8': { H: 'Ruine', B: 'Tromperie' },
