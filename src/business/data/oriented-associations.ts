@@ -1,4 +1,5 @@
-export const OrientedAssociations = {
+export const OrientedAssociations
+  = {
   '2': {
     Seven: {
       Up: 'Nouvelles',
