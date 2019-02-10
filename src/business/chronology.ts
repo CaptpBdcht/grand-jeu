@@ -28,7 +28,7 @@ export class Chronology {
     const report: ChronologyReport = { items: [] };
     const timeline = getReportTimeline(game.getCards());
     makeChronologyItems();
-    // console.warn(report.items);
+    console.warn(report.items);
     return report;
 
     function getReportTimeline(cards: Card[]): Card[] {
@@ -46,7 +46,7 @@ export class Chronology {
       let currentIndex = 0;
       for (const card of timeline) {
         const equivalence = EquivalenceGateway.for(card);
-        const associationRight = searchRightAssociation(card, currentIndex);
+        const associationRight = searchRightAssociation(card);
         const associationNext = searchNextAssociation(card, currentIndex);
         report.items.push({ card, equivalence, associationRight, associationNext });
         ++currentIndex;
