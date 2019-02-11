@@ -28,7 +28,6 @@ export class Chronology {
     const report: ChronologyReport = { items: [] };
     const timeline = getReportTimeline(game.getCards());
     makeChronologyItems();
-    console.warn(report.items);
     return report;
 
     function getReportTimeline(cards: Card[]): Card[] {

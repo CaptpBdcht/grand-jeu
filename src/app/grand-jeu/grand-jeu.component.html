@@ -1,0 +1,227 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Grand Jeu</h1>
+      <br>
+      <div class="bordered">
+        <div class="mt-2">
+          <h3>Tirage</h3>
+        </div>
+        <div class="table-responsive mt-2">
+            <table class="table table-bordered">
+              <tbody>
+              <tr>
+                <td>
+                  <select [(ngModel)]="cards[0]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[0]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[1]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[1]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[2]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[2]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[3]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[3]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[4]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[4]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[5]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[5]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[6]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[6]">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select [(ngModel)]="cards[7]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[7]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[8]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[8]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[9]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[9]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[10]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[10]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[11]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[11]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[12]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[12]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[13]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[13]">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select [(ngModel)]="cards[14]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[14]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[15]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[15]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[16]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[16]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[17]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[17]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[18]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[18]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[19]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[19]">
+                </td>
+                <td>
+                  <select [(ngModel)]="cards[20]">
+                    <option *ngFor="let card of cardsList"
+                            [value]="card.value">
+                      {{card.display}}
+                    </option>
+                  </select>
+                  <input type="checkbox" [(ngModel)]="reversed[20]">
+                </td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+        <div>
+          Position consultant:
+          <input type="text" [(ngModel)]="consultantPosition">
+          <button type="button" (click)="getFullGrandJeu()">GO</button>
+          <span *ngIf="missingCards" class="ml-2" style="color: red;">Cartes manquantes</span>
+        </div>
+      </div>
+
+      <div class="bordered" *ngIf="false">
+        <div class="mt-2">
+          <h3>Résultats</h3>
+        </div>
+        <div>Lorem ipsum</div>
+      </div>
+    </div>
+  </div>
+</div>
