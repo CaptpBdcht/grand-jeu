@@ -11,7 +11,7 @@ interface ChronologyItem {
   associationNext: string
 }
 
-interface ChronologyReport {
+export interface ChronologyReport {
   items: ChronologyItem[];
 }
 

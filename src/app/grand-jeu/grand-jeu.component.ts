@@ -4,7 +4,7 @@ import { GrandJeu } from '../../business/grand-jeu';
 import { Card } from '../../business/entities/card';
 import { Orientations } from '../../business/entities/orientations';
 import { Associations } from '../../business/associations';
-import { Chronology } from '../../business/chronology';
+import { Chronology, ChronologyReport } from '../../business/chronology';
 
 @Component({
   selector: 'app-grand-jeu',
@@ -58,6 +58,10 @@ export class GrandJeuComponent implements OnInit {
 
   public consultantPosition = 0;
   public missingCards = false;
+  public showResults = false;
+
+  public associations: string[];
+  public chronology: ChronologyReport;
 
   constructor() {
   }
@@ -84,12 +88,12 @@ export class GrandJeuComponent implements OnInit {
   }
 
   private generateGrandJeuParts() {
-    console.warn(this.grandJeu.getCards());
+    this.associations = Associations.of(this.grandJeu);
+    this.chronology = Chronology.for(this.grandJeu);
 
-    const associations = Associations.of(this.grandJeu);
-    const chronology = Chronology.for(this.grandJeu);
+    this.showResults = true;
 
-    console.warn(associations);
-    console.warn(chronology);
+    console.warn(this.associations);
+    console.warn(this.chronology);
   }
 }

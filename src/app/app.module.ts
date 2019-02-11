@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { AccordionModule } from 'ngx-bootstrap';
+
 import { AppComponent } from './app.component';
 import { GrandJeuComponent } from './grand-jeu/grand-jeu.component';
 
@@ -12,6 +14,7 @@ import { GrandJeuComponent } from './grand-jeu/grand-jeu.component';
     GrandJeuComponent
   ],
   imports: [
+    AccordionModule.forRoot(),
     BrowserModule,
     CommonModule,
     FormsModule,

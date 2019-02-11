@@ -216,11 +216,23 @@
         </div>
       </div>
 
-      <div class="bordered" *ngIf="false">
+      <div class="bordered" *ngIf="showResults">
         <div class="mt-2">
           <h3>Résultats</h3>
         </div>
-        <div>Lorem ipsum</div>
+        <div class="mt-2">
+
+          <accordion>
+            <accordion-group heading="Associations">
+              <p *ngFor="let line of associations">{{line}}</p>
+            </accordion-group>
+            <accordion-group heading="Chronologie">
+              <p *ngFor="let item of chronology.items">
+                {{item.card.orientedToString()}} - {{item.equivalence}} // {{item.associationNext}} // {{item.associationRight}}
+              </p>
+            </accordion-group>
+          </accordion>
+        </div>
       </div>
     </div>
   </div>
